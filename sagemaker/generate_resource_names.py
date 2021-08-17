@@ -47,7 +47,7 @@ def generate_resource_names(deployment_name, bento_version=""):
         deployment_name, "config"
     )
     sagemaker_endpoint_name = generate_aws_compatible_string(
-        deployment_name, "endpoint"
+        deployment_name
     )
 
     api_gateway_name = generate_aws_compatible_string(deployment_name, "api")
