@@ -87,7 +87,7 @@ def deploy_to_sagemaker(bento_bundle_path, deployment_name, config_json):
     )
 
     template_file_path = gen_cloudformation_template_with_resources(
-        sagemaker_resources, deployable_path
+        sagemaker_resources, deployable_path, deployment_name
     )
 
     print(f"Deploying stack {deployment_name}")

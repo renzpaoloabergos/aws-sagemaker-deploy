@@ -82,7 +82,7 @@ def push_docker_image_to_repository(
         raise Exception(f"Failed to push docker image {image_tag}: {error}")
 
 
-def gen_cloudformation_template_with_resources(resources: dict, project_dir):
+def gen_cloudformation_template_with_resources(resources: dict, project_dir, deployment_name):
     """
     Generates the cloudformation template file with the `resources` argument.
 
@@ -98,7 +98,7 @@ def gen_cloudformation_template_with_resources(resources: dict, project_dir):
             "OutputApiId": {
                 "Value": {"Ref": "ApiGatewayRestApi"},
                 "Description": "Api generated Id",
-                "Export": {"Name": "OutputApiId"},
+                "Export": {"Name": deployment_name},
             },
             "EndpointURL": {
                 "Value": {
