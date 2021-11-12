@@ -9,11 +9,11 @@ from utils import (
     push_docker_image_to_repository,
     gen_cloudformation_template_with_resources,
 )
-from sagemaker.generate_deployable import generate_deployable
-from sagemaker.get_arn_from_aws import get_arn_from_aws
-from sagemaker.generate_resource_names import generate_resource_names
-from sagemaker.generate_docker_image_tag import generate_docker_image_tag
-from sagemaker.generate_resources import (
+from sagemaker_util.generate_deployable import generate_deployable
+from sagemaker_util.get_arn_from_aws import get_arn_from_aws
+from sagemaker_util.generate_resource_names import generate_resource_names
+from sagemaker_util.generate_docker_image_tag import generate_docker_image_tag
+from sagemaker_util.generate_resources import (
     gen_model,
     gen_endpoint,
     gen_endpoint_config,

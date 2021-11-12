@@ -1,7 +1,7 @@
 import sys
 
 from utils import run_shell_command
-from sagemaker.generate_resource_names import generate_resource_names
+from sagemaker_util.generate_resource_names import generate_resource_names
 
 
 def delete_deployment(deployment_name):
