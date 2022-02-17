@@ -20,7 +20,7 @@ def gen_model(model_name, image_tag, execution_role, api_name, timeout, num_of_w
                 },
                 "VpcConfig": { 
                     "SecurityGroupIds": [ "sg-0261032fe0e4fe381" ],
-                    "Subnets": [ "subnet-0baf1f627590e5b0b" ]
+                    "Subnets": [ "subnet-0baf1f627590e5b0b", "subnet-080e06bbcf2cea60b" ]
                 }
             },
         },
