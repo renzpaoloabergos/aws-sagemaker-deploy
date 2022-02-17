@@ -18,6 +18,10 @@ def gen_model(model_name, image_tag, execution_role, api_name, timeout, num_of_w
                         "BENTOML_GUNICORN_NUM_OF_WORKERS": num_of_workers,
                     },
                 },
+                "VpcConfig": { 
+                    "SecurityGroupIds": [ "sg-0261032fe0e4fe381" ],
+                    "Subnets": [ "subnet-0baf1f627590e5b0b" ]
+                }
             },
         },
     }
