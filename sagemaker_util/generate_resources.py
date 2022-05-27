@@ -8,7 +8,7 @@ def gen_model(model_name, image_tag, execution_role, api_name, timeout, num_of_w
             "Type": "AWS::SageMaker::Model",
             "Properties": {
                 "ModelName": model_name,
-                "ExecutionRoleArn": execution_role,
+                "ExecutionRoleArn": "arn:aws:iam::137071197966:role/kdp-bentoml-role",
                 "PrimaryContainer": {
                     "Image": image_tag,
                     "ImageConfig": {"RepositoryAccessMode": "Platform"},
